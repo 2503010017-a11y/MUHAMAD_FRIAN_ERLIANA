@@ -17,7 +17,7 @@
 
 ## DAFTAR ISI
 - [Soal 1](#soal-1)
-- [Soal 2](#soal-2)
+- [Soal 2](https://github.com/2503010017-a11y/MUHAMAD_FRIAN_ERLIANA/blob/b217ab92d651b2b209ff332ef104c7ec8685ee38/muhamad_frian_erliana/kela_A/2503010017_muhamad_frian_erliana/soal2.cpp)
 
 ## ANALISIS & PEMBAHASAN SOAL
 
