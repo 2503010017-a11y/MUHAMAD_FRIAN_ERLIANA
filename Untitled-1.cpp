@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+#include <thread> // Standar C++ modern untuk jeda waktu
+#include <chrono> // Untuk satuan waktu milidetik
+
+using namespace std;
+
+// Fungsi untuk membuat efek teks mengetik yang stabil
+void jalan(string teks, int milidetik) {
+    for (char c : teks) {
+        cout << c << flush; // flush memastikan karakter muncul seketika
+        this_thread::sleep_for(chrono::milliseconds(milidetik));
+    }
+    cout << endl;
+}
+
+int main() {
+    // Judul
+    cout << "--- Playing: L - Lomba Sihir ---" << endl << endl;
+
+    // Bait 1
+    jalan("Kau kecup bibirku saat ku muak", 80);
+    jalan("Muak dengan sesaknya asmara", 80);
+    jalan("Yang mendorong muntahan melepaskan dendam", 70);
+    jalan("Namun hangat bibirmu redakan duka", 90);
+    
+    this_thread::sleep_for(chrono::seconds(1)); // Jeda antar bait
+    cout << endl;
+
+    // Bait 2
+    jalan("Maafkanlah aku acuhkan Dirimu", 80);
+    jalan("Waktu pertama kali tersenyum aku", 80);
+    jalan("Maafkanlah aku jejali dirimu", 80);
+    jalan("Dengan segala kisah sumpah serapahku", 70);
+
+    cout << "\n[Selesai]" << endl;
+
+    return 0;
+}
